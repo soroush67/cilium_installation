@@ -12,7 +12,9 @@ cilium install \
   --set hubble.enabled=true \
   --set hubble.relay.enabled=true \
   --set hubble.ui.enabled=true \
-  --set loadBalancer.acceleration=best-effort
+  --set loadBalancer.acceleration=best-effort \
+  --set loadBalancer.algorithm=maglev \
+  --set bandwidthManager.enabled=true
 
 # kubespray_version: 2.31.0 
 
