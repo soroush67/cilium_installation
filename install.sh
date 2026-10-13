@@ -17,7 +17,8 @@ cilium install \
   --set bandwidthManager.enabled=true
 
 # kubespray_version: 2.31.0 
-
+# kubectl -n kube-system rollout restart daemonset/cilium
+# kubectl -n kube-system rollout status daemonset/cilium --timeout=300s
 # cilium status
 
 # cilium connectivity test 
